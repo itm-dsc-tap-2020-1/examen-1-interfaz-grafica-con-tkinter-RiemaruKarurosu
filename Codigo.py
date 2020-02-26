@@ -8,15 +8,19 @@ from tkinter import messagebox as mBox
 #Zona de calificar
 def click():
     contador=0
-    if(nombre1.get()=="ALEMANIA" or nombre1.get()=="Alemania" or nombre1.get()=="Alemania")
+    if nombre1.get()=="ALEMANIA" or nombre1.get()=="Alemania" or nombre1.get()=="Alemania":
         contador=contador+1
-    if(nombre2.get()=="ALEMANIA" or nombre2.get()=="Alemania" or nombre2.get()=="Alemania")
+    if nombre2.get()=="ALEMANIA" or nombre2.get()=="Alemania" or nombre2.get()=="Alemania":
         contador=contador+1
-    if(opcion.get()==3)
+    if opcion.get()==3 :
         contador=contador+1
-    if(opcion2.get()==2)
+    if opcion2.get()==2 :
         contador=contador+1
-    if(opcion_1 or opcion_4)
+    if opcion_1.get()==True or opcion_4.get()==True:
+        contador=contador+1
+    calificacion=contador/5
+    mBox.showinfo('Calificacion final','Tu calificacion es: '+calificacion)
+    
 
 ventana=tk.Tk()
 ventana.title("Examen de Guerras mundiales")
