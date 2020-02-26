@@ -5,7 +5,18 @@ from tkinter import scrolledtext
 from tkinter import Menu
 from tkinter import messagebox as mBox
 
-#Zona de 
+#Zona de calificar
+def click():
+    contador=0
+    if(nombre1.get()=="ALEMANIA" or nombre1.get()=="Alemania" or nombre1.get()=="Alemania")
+        contador=contador+1
+    if(nombre2.get()=="ALEMANIA" or nombre2.get()=="Alemania" or nombre2.get()=="Alemania")
+        contador=contador+1
+    if(opcion.get()==3)
+        contador=contador+1
+    if(opcion2.get()==2)
+        contador=contador+1
+    if(opcion_1 or opcion_4)
 
 ventana=tk.Tk()
 ventana.title("Examen de Guerras mundiales")
