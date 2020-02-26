@@ -19,7 +19,7 @@ def click():
     if opcion_1.get()==True or opcion_4.get()==True:
         contador=contador+1
     calificacion=contador/5
-    mBox.showinfo('Calificacion final','Tu calificacion es: '+calificacion)
+    mBox.showinfo('Calificacion final',calificacion)
     
 
 ventana=tk.Tk()
@@ -105,7 +105,7 @@ casilla_5.grid(column=4,row=9,sticky=tk.W)
 
 
 #BOTON CALIFICAR
-accion=ttk.Button(ventana,text="Calificar")
+accion=ttk.Button(ventana,text="Calificar",command=click)
 accion.grid(column=5,row=20)
 
 ventana.mainloop()
