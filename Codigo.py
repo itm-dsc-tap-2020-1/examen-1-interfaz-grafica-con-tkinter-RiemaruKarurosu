@@ -5,6 +5,8 @@ from tkinter import scrolledtext
 from tkinter import Menu
 from tkinter import messagebox as mBox
 
+#Zona de 
+
 ventana=tk.Tk()
 ventana.title("Examen de Guerras mundiales")
 
@@ -36,58 +38,59 @@ radio3 = tk.Radiobutton(ventana,text="Reino Unido, Estados Unidos, Francia", var
 radio3.grid(column=2,row=4,sticky=tk.W)
 
     #Segunda pregunta radio
-texto=ttk.Label(ventana,text=": ")
+texto=ttk.Label(ventana,text="Como termino la segunda guerra mundial: ")
 texto.grid(column=0,row=5)
 #Radio 1.1
 opcion2 = tk.IntVar()
-radio4 = tk.Radiobutton(ventana,text="", variable=opcion2,value=1)
+radio4 = tk.Radiobutton(ventana,text="Con la muerte de hitler", variable=opcion2,value=1)
 radio4.grid(column=0,row=6,sticky=tk.W)
 
 #Radio 1.2
-radio4 = tk.Radiobutton(ventana,text="", variable=opcion2,value=2)
+radio4 = tk.Radiobutton(ventana,text="Consecuencia de la bomba nuclear", variable=opcion2,value=2)
 radio4.grid(column=1,row=6,sticky=tk.W)
 
 #Radio 1.3
-radio4 = tk.Radiobutton(ventana,text="", variable=opcion2,value=3)
+radio4 = tk.Radiobutton(ventana,text="Caida de la URSS", variable=opcion2,value=3)
 radio4.grid(column=2,row=6,sticky=tk.W)
 
     #Siguiente pregunta
-texto=ttk.Label(ventana,text="QUE APOS")
+texto=ttk.Label(ventana,text="Por que alemania declaro la guerra?")
 texto.grid(column=0,row=8)
 
 #Botón de control
 opcion_1= tk.IntVar()
-casilla_1=tk.Checkbutton(ventana,text="CORRECTA",variable=opcion_1)
+casilla_1=tk.Checkbutton(ventana,text="Problemas Economicos",variable=opcion_1)
 casilla_1.select()
 casilla_1.grid(column=1,row=9,sticky=tk.W)
 
 #Botón de control 2
 opcion_2= tk.IntVar()
-casilla_2=tk.Checkbutton(ventana,text="WRONG",variable=opcion_2)
+casilla_2=tk.Checkbutton(ventana,text="Problemas con la URSS",variable=opcion_2)
 casilla_2.select()
 casilla_2.grid(column=0,row=9,sticky=tk.W)
 
 #Botón de control 3
 opcion_3= tk.IntVar()
-casilla_3=tk.Checkbutton(ventana,text="WRONG",variable=opcion_3)
+casilla_3=tk.Checkbutton(ventana,text="Problemas con EUA",variable=opcion_3)
 casilla_3.select()
 casilla_3.grid(column=2,row=9,sticky=tk.W)
 
 #Botón de control 4
 opcion_4= tk.IntVar()
-casilla_4=tk.Checkbutton(ventana,text="CORRECTA",variable=opcion_4)
+casilla_4=tk.Checkbutton(ventana,text="Consecuencias de la primera guerra mundial ",variable=opcion_4)
 casilla_4.select()
 casilla_4.grid(column=3,row=9,sticky=tk.W)
 
 #Botón de control 5
 opcion_5= tk.IntVar()
-casilla_5=tk.Checkbutton(ventana,text="WRONG",variable=opcion_5)
+casilla_5=tk.Checkbutton(ventana,text="Por las bombas nucleares",variable=opcion_5)
 casilla_5.select()
 casilla_5.grid(column=4,row=9,sticky=tk.W)
 
 
 
 #BOTON CALIFICAR
-
+accion=ttk.Button(ventana,text="Calificar")
+accion.grid(column=5,row=20)
 
 ventana.mainloop()
