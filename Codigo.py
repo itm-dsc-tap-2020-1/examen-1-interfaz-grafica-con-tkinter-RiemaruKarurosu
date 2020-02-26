@@ -19,6 +19,7 @@ def click():
     if opcion_1.get()==True or opcion_4.get()==True:
         contador=contador+1
     calificacion=contador/5
+    calificacion=calificacion*100
     mBox.showinfo('Calificacion final',calificacion)
     
 
